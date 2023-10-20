@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META http-equiv=refresh content=300>
+    <link rel="icon" href="media/SMARTBIODIGESTOR.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Smart Biodigestor</title>
+</head>
+<body>
+    <header>
+       <nav class="navy">
+        <div class="logo_bar">
+            <button id="menuButton">≡</button>
+            <div id="menu" class="side-menu">
+              <ul>
+                  <li><a href="#">Puerta de los viejitos - Aguascalientes - Colonia San Antono de los Pedroza</a></li>
+                  <li><a href="#">La Tomatina - Jesus María - Colonia la Tomatina</a></li>
+                  <li><a href="#">Cañada Grande de Cotorina - Aguascalientes - Colonia Cañada Grande de Cotorina</a></li>
+                  <li><a href="#">Granja Avicola Asientos SA de CV - Aguascalientes - Cd. Industrial</a></li>
+                  <li><a href="#">Granja Yeya - Aguascalientes - Blvd. Luis Donaldo Colosio</a></li>
+              </ul>
+          </div>
+          <script>
+            document.getElementById("menuButton").addEventListener("click", function() {
+                var menu = document.getElementById("menu");
+                if (menu.style.left === "0px") {
+                    menu.style.left = "-550px"; // Cierra el menú
+                } else {
+                    menu.style.left = "0px"; // Abre el menú
+                }
+            });
+        </script>          
+            <p class="title_Page">Smart-Biodigestor</p>
+        <div class="menu_bar">
+            <div class="btn_bar">
+                <a class="btn_bar" href="#"></a>
+            </div>
+        </div>
+        </div>
+       </nav>
+    </header>
+    <div class="mainContainer">
+    <div class="container1">
+    <div class="data_table1">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Hora</th>
+                <th scope="col">Temperatura</th>
+                <th scope="col">pH</th>
+                <th scope="col">Volumen</th>
+                <th scope="col"> Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">--:--</th>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <th scope="row">--:--</th>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <th scope="row">--:--</th>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <th scope="row">--:--</th>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <th scope="row">--:--</th>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    </div>
+    <div class="container2">
+    <div class="data_table2">
+    <div class="col-sm">
+    <div class="row">
+        <h2 class="title">Grafica de temperatura</h2>
+        <div class="grid">
+          <canvas id="grafica1"></canvas>
+            <script src="table1.js"></script>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container3">
+      <div class="data_table3">
+      <div class="col-sm">
+      <div class="row">
+          <h2 class="title">Grafica de ph</h2>
+          <div class="grid">
+            <canvas id="grafica2"></canvas>
+              <script src="table2.js"></script>
+          </div>
+          </div>
+      </div>
+      </div>
+      </div>
+      <div class="container4">
+        <div class="data_table4">
+        <div class="col-sm">
+        <div class="row">
+            <h2 class="title">Grafica de Volumen</h2>
+            <div class="grid">
+              <canvas id="grafica3"></canvas>
+                <script src="table3.js"></script>
+            </div>
+            </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+</body>
+</html>
