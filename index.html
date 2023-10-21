@@ -15,26 +15,22 @@
     <header>
        <nav class="navy">
         <div class="logo_bar">
-            <button id="menuButton">≡</button>
-            <div id="menu" class="side-menu">
+          <div class="menu">
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
               <ul>
                   <li><a href="#">Puerta de los viejitos - Aguascalientes - Colonia San Antono de los Pedroza</a></li>
+                  <hr>
                   <li><a href="#">La Tomatina - Jesus María - Colonia la Tomatina</a></li>
+                  <hr>
                   <li><a href="#">Cañada Grande de Cotorina - Aguascalientes - Colonia Cañada Grande de Cotorina</a></li>
+                  <hr>
                   <li><a href="#">Granja Avicola Asientos SA de CV - Aguascalientes - Cd. Industrial</a></li>
+                  <hr>
                   <li><a href="#">Granja Yeya - Aguascalientes - Blvd. Luis Donaldo Colosio</a></li>
+                  <hr>
               </ul>
-          </div>
-          <script>
-            document.getElementById("menuButton").addEventListener("click", function() {
-                var menu = document.getElementById("menu");
-                if (menu.style.left === "0px") {
-                    menu.style.left = "-550px"; // Cierra el menú
-                } else {
-                    menu.style.left = "0px"; // Abre el menú
-                }
-            });
-        </script>          
+          </div>    
             <p class="title_Page">Smart-Biodigestor</p>
         <div class="menu_bar">
             <div class="btn_bar">
@@ -97,46 +93,53 @@
           </table>
     </div>
     </div>
-    <div class="container2">
-    <div class="data_table2">
-    <div class="col-sm">
-    <div class="row">
-        <h2 class="title">Grafica de temperatura</h2>
-        <div class="grid">
-          <canvas id="grafica1"></canvas>
-            <script src="table1.js"></script>
-        </div>
-        </div>
+    <div class="board">
+      <div class="titulo_grafica">
+        <h3 class="t_grafica">Graficas generales</h3>
     </div>
-    </div>
-    </div>
-    <div class="container3">
-      <div class="data_table3">
-      <div class="col-sm">
-      <div class="row">
-          <h2 class="title">Grafica de ph</h2>
-          <div class="grid">
-            <canvas id="grafica2"></canvas>
-              <script src="table2.js"></script>
+    <div class="sub_board">
+      <div class="sep_board"></div>
+      <div class="cont_board">
+          <div class="graf_board">
+              <div class="barra">
+                  <div class="sub_barra b1">
+                      <div class="tag_g">25°C</div>
+                      <div class="tag_leyenda">Temperatura</div>
+                  </div>
+              </div>
+              <div class="barra">
+                  <div class="sub_barra b2">
+                      <div class="tag_g">7,5</div>
+                      <div class="tag_leyenda">pH</div>
+                  </div>
+              </div>
+              <div class="barra">
+                  <div class="sub_barra b3">
+                      <div class="tag_g">50%</div>
+                      <div class="tag_leyenda">Volumen</div>
+                  </div>
+              </div>
           </div>
+          <div class="tag_board">
+              <div class="sub_tag_board">
+                  <div>100</div>
+                  <div>90</div>
+                  <div>80</div>
+                  <div>70</div>
+                  <div>60</div>
+                  <div>50</div>
+                  <div>40</div>
+                  <div>30</div>
+                  <div>20</div>
+                  <div>10</div>
+              </div>
           </div>
-      </div>
-      </div>
-      </div>
-      <div class="container4">
-        <div class="data_table4">
-        <div class="col-sm">
-        <div class="row">
-            <h2 class="title">Grafica de Volumen</h2>
-            <div class="grid">
-              <canvas id="grafica3"></canvas>
-                <script src="table3.js"></script>
-            </div>
-            </div>
-        </div>
-      </div>
-      </div>
-      </div>
+     </div> 
+      <div class="sep_board"></div>
+ </div>    
+</div>
+    </div>
+    </div>
     <div class="bg"></div>
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
